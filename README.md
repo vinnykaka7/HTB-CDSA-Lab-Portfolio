@@ -6,7 +6,7 @@
 
 Welcome to my defensive security repository. This portfolio serves as a living logbook of my technical capabilities in Security Operations Center (SOC) workflows, threat analysis, and incident triage. 
 
-Instead of relying solely on theoretical study, this repository bridges the gap between structured learning and real-world application. For every concept mastered through the **Hack The Box (HTB) Certified Defensive Security Analyst (CDSA)** pathway, I construct **three distinct, real-world scenario investigations**—simulating enterprise network traffic, host-level artifacts, and SIEM event logs to practice end-to-end incident handling.
+Instead of relying solely on theoretical study, this repository bridges the gap between structured learning and real-world application. For every concept mastered through the **Hack The Box (HTB) Certified Defensive Security Analyst (CDSA)** pathway, I construct **three distinct, real-world scenario investigations**—simulating enterprise network traffic, host-level artifacts, and SIEM event logs to practice end-to-end incident handling.virtualization
 
 ### Key Competencies Demonstrated
 
