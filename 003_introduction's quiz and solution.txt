@@ -16,3 +16,26 @@ This separation enforces the Principle of Least Privilege :
 /bin contains general binaries every standard user needs for daily tasks (like listing files with ls or printing text with cat).
 
 /sbin contains system administration binaries (like fdisk, iptables, or reboot) that require administrative (root) privileges to execute safely.
+
+Problem 2
+Applying the Linux Philosophy!
+
+Here is our scenario: A security team needs to monitor user activity and parse raw log files in /var/log without using a graphical user interface (GUI).
+How does treating system logs as plain text files make a security analyst's job easier when using standard command-line tools (like cat, grep, or less), compared to an OS that hides logs inside complex, proprietary binary databases? = Because Linux treats logs as plain text rather than hiding them in proprietary or binary formats, you can analyze them directly using standard command-line tools without needing specialized database viewers.
+
+
+Problem 3 Scenario: You are assisting a system administrator in threat-modeling an enterprise server to ensure critical system resources are well-protected.
+
+Task 1: The Architectural Layers
+Let's look at how the OS is structured. The Linux architecture consists of four distinct layers:
+
+ System Utilities / Applications (Top layer)
+
+ Shell (CLI)
+
+ ???
+
+🔌 Hardware (Bottom layer)
+
+Which crucial component sits in layer 3—directly between the physical Hardware and the Shell—to control system resources and manage process isolation?   kernel 
+
