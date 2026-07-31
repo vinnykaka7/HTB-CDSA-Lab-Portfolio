@@ -1,0 +1,61 @@
+# Linux Fundamentals Study Notes
+
+## 1. What is Linux?
+* **Operating System (OS) Definition:** An operating system is the core software managing a computer’s hardware resources, facilitating communication between software applications and physical hardware components (CPU, RAM, storage, peripherals).
+* **Role in Cybersecurity:** Linux acts as a foundational pillar in security due to its open-source nature, robustness, high flexibility, and stability. Think of these notes as your first driving lesson for a new vehicle—getting to know what under the hood makes it run.
+* **Distributions ("Distros"):** Because Linux is open-source, it comes in hundreds of tailored versions called distributions. 
+* **Pwnbox & Parrot OS:** In security environments (like hands-on labs), you frequently encounter **Parrot OS** (a Debian-based distro tailored specifically for security testing, privacy, and development) via customized instances like Pwnbox.
+
+---
+
+## 2. History & Evolution
+* **1970 — Unix:** Developed by Ken Thompson and Dennis Ritchie at AT&T. This laid the foundation for modern multi-user operating systems.
+* **1977 — BSD:** The Berkeley Software Distribution was created, but legal disputes with AT&T over proprietary Unix code halted its growth.
+* **1983 — GNU Project & GPL:** Richard Stallman launched the GNU project to build a free Unix-like OS, leading to the creation of the **GNU General Public License (GPL)**. However, a free working kernel was still missing.
+* **1991 — The Birth of Linux:** Linus Torvalds, a Finnish university student, created a free, personal OS kernel in C. 
+* **Growth:** Linux grew from a small personal project under non-commercial licensing into a massive kernel licensed under **GPLv2**, featuring over 23 million lines of code (excluding comments).
+* **Widespread Impact:** Today, over 600 distros exist (e.g., Ubuntu, Debian, Fedora, RedHat, Arch/Manjaro, Mint, Gentoo). Because Android runs on a modified Linux kernel, Linux is technically the most widely installed operating system in the world.
+
+---
+
+## 3. Key Features & Security Strengths
+* **Security:** Highly resilient against malware compared to desktop market leaders like Windows, with fast security patching and continuous community auditing.
+* **Performance & Stability:** Offers exceptional system stability, long uptime, and minimal resource overhead.
+* **Open Source:** Source code can be audited, modified, and distributed freely (commercially or non-commercially).
+* **Versatility:** Runs on everything from smartphones and embedded IoT devices (routers, TVs, game consoles) to supercomputers, cloud servers, and mainframes.
+* **Trade-offs:** Can have a steeper learning curve for beginners and occasionally supports fewer out-of-the-box hardware drivers than consumer-oriented OSs like Windows.
+
+---
+
+## 4. The Linux Philosophy
+The Linux philosophy operates like a well-structured company: **Architecture** is the organizational chart, **Components** are the dedicated employees, and **Philosophy** is the company culture emphasizing simplicity, transparency, and modularity.
+
+| Principle | Description |
+| :--- | :--- |
+| **Everything is a file** | All hardware devices, active processes, and network sockets are represented as files on disk. |
+| **Small, single-purpose programs** | Tools are designed to do one specific job extraordinarily well rather than trying to do everything. |
+| **Program chaining** | Programs can be combined (piped) together to execute complex data-processing tasks. |
+| **Avoid captive user interfaces** | Designed primarily to operate via the text-based shell/terminal for maximum automation and control. |
+| **Text-based configuration** | System and app settings are stored in readable plain text files (e.g., `/etc/passwd`). |
+
+---
+
+## 5. Core System Components
+
+* **Bootloader:** The initial code that guides the system startup process (e.g., **GRUB** in Parrot OS).
+* **OS Kernel:** The central heart of the OS; virtualizes and manages system resources (CPU, RAM, I/O devices) at the hardware level while isolating processes to prevent conflict.
+* **Daemons:** Background service programs that load during boot or user login to manage system tasks (printing, task scheduling, networking).
+* **OS Shell:** The command-line interpreter (CLI) providing an interface between user commands and the kernel (e.g., Bash, Zsh, Fish, Ksh).
+* **Graphics Server:** The sub-system (usually the **X-Window System** or **X-server**) that renders graphical interfaces locally or remotely.
+* **Window Manager / Desktop Environment:** The GUI overlay providing user-friendly visual features (e.g., GNOME, KDE, MATE, Cinnamon).
+* **Utilities:** Functional programs and applications used by the OS or end user to carry out specific tasks.
+
+
+## 6. Linux Architecture Layers
+* System Utilities / Applications
+* Shell (Command Line Interface - CLI)
+
+
+
+
+---
