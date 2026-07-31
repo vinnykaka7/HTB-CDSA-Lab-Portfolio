@@ -54,7 +54,29 @@ The Linux philosophy operates like a well-structured company: **Architecture** i
 ## 6. Linux Architecture Layers
 * System Utilities / Applications
 * Shell (Command Line Interface - CLI)
+* Kernel (Resource Virtualization & Control)
+* Hardware (CPU, RAM, Storage, Peripherals)
 
+## 7. Filesystem Hierarchy Standard (FHS)
+Linux organizes files in a single unified inverted-tree hierarchy, starting at the root directory (`/`).
+
+| Path | Purpose & Description |
+| :--- | :--- |
+| `/` | **Root directory:** The top-level root filesystem containing all essential boot files and standard mount points. |
+| `/bin` | **Essential User Binaries:** Essential command binaries needed for basic system operation. |
+| `/boot` | **Boot Files:** Bootloader files, Linux kernel executables, and initial ramdisk images. |
+| `/dev` | **Device Files:** Hardware abstraction files representing attached drives, terminals, and peripherals. |
+| `/etc` | **Configuration Files:** Local system-wide configuration files and application settings. |
+| `/home` | **User Home Directories:** Personal storage folders for individual non-root system users. |
+| `/lib` | **System Libraries:** Essential shared library code required for system boot and binary execution. |
+| `/media` | **Removable Media:** Mount point for auto-mounted removable storage (USB drives, CDs). |
+| `/mnt` | **Temporary Mount Point:** Location to manually mount temporary filesystems. |
+| `/opt` | **Optional Software:** Storage for third-party add-on application packages. |
+| `/root` | **Root Home Directory:** Dedicated home directory for the administrative superuser (`root`). |
+| `/sbin` | **System Admin Binaries:** System administration executables (restricted to admin tasks). |
+| `/tmp` | **Temporary Files:** Temporary files created by apps; usually cleared on reboot. |
+| `/usr` | **User Binaries & Data:** Secondary hierarchy containing user utilities, shared libraries, and documentation. |
+| `/var` | **Variable Data:** Files that change frequently during system operation (system logs, email queues, web root files). |
 
 
 
