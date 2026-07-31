@@ -1,0 +1,18 @@
+Problem 1
+
+File system Hierarchy Audit
+Scenario: You are a junior security analyst performing an initial security audit on a newly deployed Parrot OS server.
+
+Tasks:
+
+1.Map out where system logs are kept, where global configuration settings reside, and where non-root user data is stored.
+mapped out configurations (/etc),user files also the the non-root user (/home),logs/Variable Data(/var)
+
+2.Explain why separating administrative binaries (/sbin) from standard user binaries (/bin) enhances security and access control.
+If regular users could run administrative tools in /sbin without restrictions, they could alter firewall rules, format disks, modify user accounts, or completely compromise the system.
+
+This separation enforces the Principle of Least Privilege :
+
+/bin contains general binaries every standard user needs for daily tasks (like listing files with ls or printing text with cat).
+
+/sbin contains system administration binaries (like fdisk, iptables, or reboot) that require administrative (root) privileges to execute safely.
